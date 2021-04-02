@@ -1,0 +1,57 @@
+<!--<input type="button" name="button" value="click" [disabled]="!x"
+(click)="xyz()">
+<Button class ="ColorStyleClass" (click)="onclick()">Button</Button> 
+<p [ngClass]="special_danger" class="special">
+    This is my text
+</p>
+<input type="text" [(ngModel)]="name">
+{{message}}
+{{str}}
+{{name}}
+<div>
+    <student></student>
+</div> -->
+<!-- <div [ngSwitch]="fruit"> 
+    <p *ngSwitchCase="'apple'">apple selected</p>
+    <p *ngSwitchCase="'orange'">orange selected</p>
+    <p *ngSwitchDefault>Select again</p>
+</div> -->
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <a routerLink="/authenticate" class="link-primary">Authenticate</a>
+      </div>
+      <div class="col-sm">
+        <a routerLink="/cart" class="link-primary">Cart</a>
+      </div>
+      <div class="col-sm">
+        <a href="#" class="link-primary">Others</a>
+      </div>
+      <div class="col-sm">
+        <a routerLink="/sample" class="link-primary">Sample</a>
+      </div>
+    </div>
+  </div>
+
+<div>
+  <table>
+    <td *ngFor="let service of services">
+      <tr>{{service.id}}</tr>
+      <tr>{{service.name}}</tr>
+    </td>
+  </table>
+</div>
+
+  
+
+<!--<app-child [checkTheBox]="check_child" (childEvent)="bindData($event)" >
+
+</app-child>
+<br>
+<app-cart-list></app-cart-list> 
+<input type="text" [(ngModel)]="address">
+<br>
+<app-simple [parentdata]='address'></app-simple>-->
+<router-outlet></router-outlet>
+

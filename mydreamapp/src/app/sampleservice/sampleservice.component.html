@@ -1,0 +1,9 @@
+<p>sampleservice works!</p>
+<table>
+    <tr (click)="onSelect(sample)" *ngFor = "let sample of samples">
+        <button><td class="id">{{sample.id}}</td></button>
+        <td>{{sample.name}}</td>
+        <td>{{sample.marks}}</td>   
+        
+    </tr>
+</table>
